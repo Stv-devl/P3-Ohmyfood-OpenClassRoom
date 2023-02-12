@@ -1,3 +1,23 @@
 /**********************************************************************/
 /*Menu*/
 /**********************************************************************/
+
+.location_container {
+  @include center-row;
+  gap: 12px;
+  padding: 20px 0;
+  background-color: #e7e7e3;
+  border-top: 5px solid #dcdcd9;
+}
+.view_container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.button_homepage {
+  @include button;
+  background: linear-gradient(to top, #9356dc, #ff69da);
+}
+.restaurant_img {
+  width: 150px;
+}
