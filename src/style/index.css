@@ -2,7 +2,8 @@
 /*setting*/
 /**********************************************************************/
 /****************************setting fonts***************************/
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /****************************Setting page****************************/
 * {
   margin: 0;
@@ -11,7 +12,8 @@
   list-style-type: none;
   margin-block: 0;
   outline: none;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
