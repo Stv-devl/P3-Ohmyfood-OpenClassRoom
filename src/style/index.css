@@ -16,7 +16,7 @@
 }
 
 body {
-  max-height: 1400px;
+  max-width: 1400px;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -42,10 +42,21 @@ h3 {
 
 h4 {
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
+  font-size: 22px;
   color: #fcfcfa;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
+}
+
+.restaurant_title {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1.5px;
+}
+
+.title_menu {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .text_bold {
@@ -87,6 +98,10 @@ img {
 /*header*/
 /**********************************************************************/
 .header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
   margin: 22px 0 12px 0;
 }
 .header_container .title_img {
@@ -124,8 +139,8 @@ img {
   border-radius: 50px;
   margin: 0 auto;
   box-shadow: 2px 5px 8px #dcdcd9;
-  cursor: pointer;
   background: linear-gradient(to top, #9356dc, #ff69da);
+  cursor: pointer;
 }
 
 .functioning_container {
@@ -235,6 +250,90 @@ img {
 }
 .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper:hover .emptyheart {
   display: none;
+}
+
+main {
+  position: relative;
+  background-color: #f8f8f7;
+}
+main .restaurant_image {
+  width: 100%;
+  height: 255px;
+}
+main .restaurant_image .restaurant_img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 255px;
+  left: 0px;
+  top: 0px;
+}
+main .menu_container {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  width: 100%;
+  background-color: #f8f8f7;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 5% 0 5%;
+  top: -50px;
+}
+main .menu_container .title_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+main .menu_container .title_menu {
+  position: relative;
+}
+main .menu_container .title_menu:after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background: #99e2d0;
+  left: 0px;
+  top: 22px;
+}
+main .menu_container .food_container {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 20px 0;
+}
+main .menu_container .food_container .menu_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 68px;
+  border-radius: 15px;
+  background-color: #fcfcfa;
+  padding: 0 15px;
+  box-shadow: 2px 5px 8px #cccccc;
+  cursor: pointer;
+}
+main .menu_container .food_container .menu_card .check {
+  display: none;
+}
+main .menu_container .menu_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fcfcfa;
+  font-size: 16px;
+  font-weight: 500;
+  width: 225px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 auto;
+  box-shadow: 2px 5px 8px #dcdcd9;
+  background: linear-gradient(to top, #9356dc, #ff69da);
+  cursor: pointer;
+  width: 186px;
+  margin-top: 20px;
 }
 
 /**********************************************************************/
