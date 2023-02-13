@@ -23,6 +23,7 @@ body {
 }
 
 /***************************Setting colors***************************/
+/*change icone colors*/
 .white {
   color: #fcfcfa;
 }
@@ -31,6 +32,12 @@ body {
 h1 {
   font-size: 25px;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 3px;
 }
 
 h4 {
@@ -42,7 +49,7 @@ h4 {
 }
 
 .text_bold {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -50,6 +57,11 @@ h4 {
   font-size: 18px;
   font-weight: 300;
   margin: 25px 0 30px 0;
+}
+
+.new_text {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .footer_text {
@@ -62,8 +74,13 @@ h4 {
 /*************************Text link**************************/
 a,
 a:visited {
-  color: blue;
+  color: black;
   text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /**********************************************************************/
@@ -101,26 +118,26 @@ a:visited {
   color: #fcfcfa;
   font-size: 16px;
   font-weight: 500;
-  width: 220px;
+  width: 225px;
   height: 50px;
   border: none;
   border-radius: 50px;
   margin: 0 auto;
-  box-shadow: 2px 5px 8px #d7d7d6;
+  box-shadow: 2px 5px 8px #dcdcd9;
   cursor: pointer;
   background: linear-gradient(to top, #9356dc, #ff69da);
 }
 
 .functioning_container {
   text-align: left;
-  width: 88%;
+  width: 89%;
   margin: 0 auto;
-  padding: 53px 0 70px 0;
+  padding: 53px 0 70px 10px;
 }
 .functioning_container .functioning_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 24px;
   padding-top: 33px;
 }
 .functioning_container .functioning_wrapper .functioning_card {
@@ -129,25 +146,25 @@ a:visited {
   align-items: center;
   justify-content: center;
   justify-content: normal;
-  gap: 15px;
+  gap: 24px;
   background-color: #f8f8f7;
   width: 100%;
-  height: 60px;
+  height: 75px;
   border-radius: 20px;
   padding-left: 35px;
   box-shadow: 2px 5px 8px #cccccc;
   transition: 0.4s ease;
   cursor: pointer;
 }
-.functioning_container .functioning_wrapper .functioning_card:hover {
-  background-color: #e9e0fa;
-}
-.functioning_container .functioning_wrapper .functioning_card:hover:hover .hoverpurple {
-  color: #9356dc;
-}
-.functioning_container .functioning_wrapper .functioning_card .hoverpurple {
-  color: grey;
+.functioning_container .functioning_wrapper .functioning_card .functioning_icone {
+  color: #716c6c;
   transition: 0.2s ease;
+}
+.functioning_container .functioning_wrapper .functioning_card:hover {
+  background-color: #f1ecf8;
+}
+.functioning_container .functioning_wrapper .functioning_card:hover:hover .functioning_icone {
+  color: #9356dc;
 }
 .functioning_container .functioning_wrapper .functioning_card .circle {
   position: absolute;
@@ -159,49 +176,65 @@ a:visited {
   color: #f8f8f7;
   background-color: #9356dc;
   border-radius: 100%;
-  transform: translateX(-50px);
+  transform: translateX(-45px);
 }
 
 .restaurant_container {
   background-color: #f8f8f7;
-  padding: 50px 0;
+  padding: 50px 0 63px 0;
 }
 .restaurant_container .restaurant_card_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
+  padding: 30px 0 0 0;
 }
 .restaurant_container .restaurant_card_wrapper .restaurant_card {
   position: relative;
   text-align: left;
   width: 90%;
-  height: 260px;
-  background-color: white;
+  height: 250px;
+  background-color: #fcfcfa;
   border-radius: 15px;
   margin: 0 auto;
+  box-shadow: 2px 5px 8px #cccccc;
 }
 .restaurant_container .restaurant_card_wrapper .restaurant_card .new_card {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: greenyellow;
-  background-color: green;
+  color: #087157;
+  background-color: #99e2d0;
+  border-radius: 4px;
   width: 80px;
-  height: 25px;
+  height: 28px;
   top: 15px;
   right: 15px;
 }
 .restaurant_container .restaurant_card_wrapper .restaurant_card .restaurant_img {
   width: 100%;
-  height: 180px;
+  height: 175px;
   border-radius: 15px 15px 0 0;
 }
 .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 14px 25px 0 15px;
+}
+.restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper {
+  cursor: pointer;
+}
+.restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper .fullheart {
+  display: none;
+}
+.restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper:hover .fullheart {
+  display: block;
+  color: #9356dc;
+}
+.restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper:hover .emptyheart {
+  display: none;
 }
 
 /**********************************************************************/

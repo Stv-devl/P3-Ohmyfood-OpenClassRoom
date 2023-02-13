@@ -26,8 +26,25 @@ body {
 
 /***************************Setting colors***************************/
 
+//primary
+$darkPurple: #9356dc;
+//Secondary
+$pink: #ff69da;
+//Tertiary
+$darkGreen: #087157;
+//other
+$white: #fcfcfa;
+$backgroundLightgrey: #f8f8f7;
+$backgroundDarkgrey: #e7e7e3;
+$borderGrey: #dcdcd9;
+$hoverLightPurple: #f1ecf8;
+$boxShadowGrey: #cccccc;
+$darkGreyIcone: #716c6c;
+$lightGreen: #99e2d0;
+
+/*change icone colors*/
 .white {
-  color: #fcfcfa;
+  color: $white;
 }
 
 /**************************setting text***************************/
@@ -36,16 +53,22 @@ h1 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
 h4 {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
-  color: #fcfcfa;
+  color: $white;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
 }
 
 .text_bold {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .view_text {
@@ -53,10 +76,14 @@ h4 {
   font-weight: 300;
   margin: 25px 0 30px 0;
 }
+.new_text {
+  font-size: 15px;
+  font-weight: 500;
+}
 .footer_text {
   font-size: 19px;
   font-weight: 400;
-  color: #fcfcfa;
+  color: $white;
 }
 
 /*************************Setting mixxin************************/
@@ -84,21 +111,25 @@ h4 {
 }
 
 @mixin button {
-  color: #fcfcfa;
+  color: $white;
   font-size: 16px;
   font-weight: 500;
-  width: 220px;
+  width: 225px;
   height: 50px;
   border: none;
   border-radius: 50px;
   margin: 0 auto;
-  box-shadow: 2px 5px 8px #d7d7d6;
+  box-shadow: 2px 5px 8px $borderGrey;
   cursor: pointer;
 }
 
 /*************************Text link**************************/
 a,
 a:visited {
-  color: blue;
+  color: black;
   text-decoration: none;
+}
+
+img {
+  object-fit: cover;
 }
