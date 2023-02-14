@@ -254,6 +254,7 @@ img {
   display: none;
 }
 
+<<<<<<< HEAD
 .main_restaurant {
   position: relative;
   background-color: #f3f3f0;
@@ -263,6 +264,17 @@ img {
   height: 255px;
 }
 .main_restaurant .restaurant_image .restaurant_img {
+=======
+main {
+  position: relative;
+  background-color: #f8f8f7;
+}
+main .restaurant_image {
+  width: 100%;
+  height: 255px;
+}
+main .restaurant_image .restaurant_img {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -270,26 +282,45 @@ img {
   left: 0px;
   top: 0px;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container {
+=======
+main .menu_container {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   position: relative;
   z-index: 2;
   text-align: left;
   width: 100%;
+<<<<<<< HEAD
   background-color: #f3f3f0;
+=======
+  background-color: #f8f8f7;
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   border-radius: 20px 20px 0 0;
   padding: 40px 5% 0 5%;
   top: -50px;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container .title_wrapper {
+=======
+main .menu_container .title_wrapper {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 20px;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container .title_menu {
   position: relative;
 }
 .main_restaurant .menu_container .title_menu:after {
+=======
+main .menu_container .title_menu {
+  position: relative;
+}
+main .menu_container .title_menu:after {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   position: absolute;
   content: "";
   width: 40px;
@@ -298,13 +329,21 @@ img {
   left: 0px;
   top: 22px;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container .food_container {
+=======
+main .menu_container .food_container {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   display: flex;
   flex-direction: column;
   gap: 11px;
   padding: 20px 0;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container .food_container .menu_card {
+=======
+main .menu_container .food_container .menu_card {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,10 +355,17 @@ img {
   box-shadow: 2px 5px 8px #cccccc;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .main_restaurant .menu_container .food_container .menu_card .check {
   display: none;
 }
 .main_restaurant .menu_container .menu_button {
+=======
+main .menu_container .food_container .menu_card .check {
+  display: none;
+}
+main .menu_container .menu_button {
+>>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   display: flex;
   align-items: center;
   justify-content: center;
