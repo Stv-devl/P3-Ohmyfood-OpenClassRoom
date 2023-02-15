@@ -43,20 +43,18 @@
       border-radius: 20px;
       padding-left: 35px;
       box-shadow: 2px 5px 8px $boxShadowGrey;
-      transition: 0.4s ease;
+      transition: 0.4s ease-in-out;
       cursor: pointer;
 
       .functioning_icone {
         color: $darkGreyIcone;
-        transition: 0.2s ease;
       }
 
       &:hover {
         background-color: $hoverLightPurple;
-
-        &:hover .functioning_icone {
-          color: $darkPurple;
-        }
+      }
+      &:hover .functioning_icone {
+        color: $darkPurple;
       }
 
       .circle {
@@ -115,20 +113,45 @@
         padding: 14px 25px 0 15px;
 
         .icone_wrapper {
+          position: relative;
+          @include center-row;
+          width: 32px;
+          height: 32px;
           cursor: pointer;
+
+          .emptyheart {
+            position: absolute;
+            opacity: 1;
+            transition: 0.4s ease-in-out;
+          }
           .fullheart {
-            display: none;
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+          }
+
+          &:hover {
+            .fullheart {
+              opacity: 1;
+              path {
+                fill: url(#gradient);
+              }
+            }
+            .emptyheart {
+              opacity: 0;
+            }
           }
         }
+        /*
         &:hover {
           .fullheart {
-            display: block;
-            color: $darkPurple;
+            opacity: 1;
+            background-color: $linearGradientTop;
           }
           .emptyheart {
-            display: none;
+            opacity: 0;
           }
-        }
+        }*/
       }
     }
   }

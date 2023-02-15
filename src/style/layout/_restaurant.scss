@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 .main_restaurant {
-=======
-main {
->>>>>>> 4dc3bad6de474ff13ad0b97363fcaf2869299f68
   position: relative;
   background-color: $backgroundLightgrey;
 
@@ -54,18 +50,106 @@ main {
       padding: 20px 0;
 
       .menu_card {
+        position: relative;
         @include center-row;
         justify-content: space-between;
+        overflow: hidden;
         height: 68px;
         border-radius: 15px;
         background-color: $white;
         padding: 0 15px;
         box-shadow: 2px 5px 8px $boxShadowGrey;
         cursor: pointer;
+        transition: 0.6s ease-in-out;
+        animation: moving 1s ease-out;
+
+        @keyframes moving {
+          0% {
+            transform: translateY(10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+
+        .text_wrapper {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          h3,
+          p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .price {
+          padding-left: 15px;
+        }
 
         .check {
-          display: none;
+          position: absolute;
+          @include center-row;
+          width: 60px;
+          height: 68px;
+          right: -60px;
+          border-radius: 0 15px 15px 0;
+          background-color: $lightGreen;
+          transition: 0.6s ease-in-out;
+
+          .circle {
+            @include center-row;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: $white;
+            color: $lightGreen;
+            transform: rotate(360deg);
+            transition: 0.6s ease-in-out;
+          }
         }
+
+        &:hover {
+          padding-right: 70px;
+          .check {
+            transform: translateX(-60px);
+          }
+          .circle {
+            transform: rotate(0);
+          }
+        }
+      }
+
+      .delay01 {
+        animation-delay: 0s;
+      }
+      .delay02 {
+        animation-delay: 0.2s;
+      }
+      .delay03 {
+        animation-delay: 0.4s;
+      }
+      .delay04 {
+        animation-delay: 0.6s;
+      }
+      .delay05 {
+        animation-delay: 0.8s;
+      }
+      .delay06 {
+        animation-delay: 1s;
+      }
+      .delay07 {
+        animation-delay: 1.2s;
+      }
+      .delay08 {
+        animation-delay: 1.4s;
+      }
+      .delay09 {
+        animation-delay: 1.6s;
+      }
+      .delay10 {
+        animation-delay: 1.8s;
       }
     }
     .menu_button {

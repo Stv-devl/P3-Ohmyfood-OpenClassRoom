@@ -24,6 +24,8 @@ $boxShadowGrey: #cccccc;
 $darkGreyIcone: #716c6c;
 $lightGreen: #99e2d0;
 
+$linearGradientTop: linear-gradient(to top, #9356dc, #ff69da);
+
 /*change icone colors*/
 .white {
   color: $white;
@@ -43,7 +45,7 @@ $lightGreen: #99e2d0;
 body {
   max-width: 1400px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   background-color: $white;
 }
@@ -55,7 +57,7 @@ h1 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 3px;
 }
@@ -87,6 +89,10 @@ h4 {
   font-size: 18px;
   font-weight: 300;
   margin: 25px 0 30px 0;
+}
+
+.price {
+  font-weight: 700;
 }
 .new_text {
   font-size: 15px;
@@ -132,7 +138,7 @@ h4 {
   border-radius: 50px;
   margin: 0 auto;
   box-shadow: 2px 5px 8px $borderGrey;
-  background: linear-gradient(to top, #9356dc, #ff69da);
+  background: $linearGradientTop;
   cursor: pointer;
 }
 
