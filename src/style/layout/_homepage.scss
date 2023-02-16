@@ -6,7 +6,7 @@ main {
   z-index: 0;
 
   .location_container {
-    @include center-row;
+    @include center;
     height: 50px;
     gap: 18px;
     background-color: $backgroundDarkgrey;
@@ -58,7 +58,7 @@ main {
 
       .functioning_card {
         position: relative;
-        @include center-row;
+        @include center;
         @include shadow;
         justify-content: normal;
         gap: 24px;
@@ -84,7 +84,7 @@ main {
 
         .circle {
           position: absolute;
-          @include center-row;
+          @include center;
           width: 25px;
           height: 25px;
           color: $backgroundLightgrey;
@@ -129,7 +129,7 @@ main {
 
         .new_card {
           position: absolute;
-          @include center-row;
+          @include center;
           color: $darkGreen;
           background-color: $lightGreen;
           border-radius: 4px;
@@ -149,37 +149,7 @@ main {
           justify-content: space-between;
           align-items: center;
           padding: 14px 25px 0 15px;
-
-          .icone_wrapper {
-            position: relative;
-            @include center-row;
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-
-            .emptyheart {
-              position: absolute;
-              opacity: 1;
-              transition: 0.4s ease-in-out;
-            }
-            .fullheart {
-              position: absolute;
-              opacity: 0;
-              transition: 0.4s ease-in-out;
-            }
-
-            &:hover {
-              .fullheart {
-                opacity: 1;
-                path {
-                  fill: url(#gradient);
-                }
-              }
-              .emptyheart {
-                opacity: 0;
-              }
-            }
-          }
+          @include heart-animation;
         }
       }
     }
@@ -187,7 +157,7 @@ main {
   /*****Setting the page loading*****/
 
   .loader {
-    @include center-row;
+    @include center;
     position: absolute;
     z-index: 10;
     top: -90px;
@@ -195,7 +165,7 @@ main {
     width: 100%;
     height: 150%;
     scale: 1;
-    animation: overlay 50ms 2s forwards; //the overlay will close after 6 second
+    animation: overlay 50ms 2s forwards; //the overlay will close after 2 second
 
     .loader_circle_starter {
       position: absolute;

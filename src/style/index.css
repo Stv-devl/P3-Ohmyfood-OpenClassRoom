@@ -88,12 +88,11 @@ h4 {
 }
 
 /*************************Setting mixxin************************/
-/*************************Text link**************************/
+/*************************Text link & img fit**************************/
 a,
 a:visited {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 img {
@@ -352,6 +351,7 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapp
 main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper {
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 32px;
@@ -427,7 +427,7 @@ main .loader .loader_circle_inside {
   position: relative;
   background-color: #f3f3f0;
   /***************media => desktop*************/
-  /******/
+  /*******************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant {
@@ -438,7 +438,7 @@ main .loader .loader_circle_inside {
   width: 100%;
   height: 255px;
   /***************media => desktop*************/
-  /******/
+  /*******************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant .restaurant_image {
@@ -453,7 +453,7 @@ main .loader .loader_circle_inside {
   left: 0px;
   top: 0px;
   /***************media => desktop*************/
-  /******/
+  /*******************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant .restaurant_image .restaurant_img {
@@ -470,7 +470,7 @@ main .loader .loader_circle_inside {
   padding: 40px 5% 0 5%;
   top: -50px;
   /***************media => desktop*************/
-  /******/
+  /********************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant .menu_container {
@@ -483,6 +483,35 @@ main .loader .loader_circle_inside {
   align-items: center;
   justify-content: space-between;
   padding-right: 20px;
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper .emptyheart {
+  position: absolute;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper .fullheart {
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .fullheart {
+  opacity: 1;
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .fullheart path {
+  fill: url(#gradient);
+}
+.main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .emptyheart {
+  opacity: 0;
 }
 .main_restaurant .menu_container .title_menu {
   position: relative;
@@ -502,7 +531,7 @@ main .loader .loader_circle_inside {
   gap: 11px;
   padding: 20px 0;
   /***************media => desktop*************/
-  /******/
+  /*******************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant .menu_container .food_container {
@@ -529,7 +558,7 @@ main .loader .loader_circle_inside {
   transition: padding-right 0.6s ease-in-out;
   transform: scale(0);
   /***************media => desktop*************/
-  /******/
+  /*******************************************/
 }
 @media screen and (min-width: 1000px) {
   .main_restaurant .menu_container .food_container .menu_card {

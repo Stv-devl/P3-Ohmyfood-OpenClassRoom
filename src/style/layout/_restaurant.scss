@@ -6,7 +6,7 @@
   @media screen and (min-width: 1000px) {
     padding-bottom: 50px;
   }
-  /******/
+  /*******************************************/
 
   .restaurant_image {
     width: 100%;
@@ -16,7 +16,7 @@
     @media screen and (min-width: 1000px) {
       height: 400px;
     }
-    /******/
+    /*******************************************/
     .restaurant_img {
       position: absolute;
       z-index: 0;
@@ -29,7 +29,7 @@
       @media screen and (min-width: 1000px) {
         height: 400px;
       }
-      /******/
+      /*******************************************/
     }
   }
 
@@ -47,13 +47,14 @@
     @media screen and (min-width: 1000px) {
       top: -20px;
     }
-    /******/
+    /********************************************/
 
     .title_wrapper {
       @include direction-row;
       align-items: center;
       justify-content: space-between;
       padding-right: 20px;
+      @include heart-animation;
     }
     .title_menu {
       position: relative;
@@ -79,11 +80,11 @@
         justify-content: center;
         margin: 0 auto;
       }
-      /******/
+      /*******************************************/
 
       .menu_card {
         position: relative;
-        @include center-row;
+        @include center;
         @include shadow;
         justify-content: space-between;
         overflow: hidden;
@@ -99,7 +100,7 @@
         @media screen and (min-width: 1000px) {
           width: 33%;
         }
-        /******/
+        /*******************************************/
 
         .text_wrapper {
           white-space: nowrap;
@@ -119,7 +120,7 @@
 
         .check {
           position: absolute;
-          @include center-row;
+          @include center;
           width: 60px;
           height: 68px;
           right: -60px;
@@ -128,7 +129,7 @@
           transition: 0.6s ease-in-out; //for check moving
 
           .circle {
-            @include center-row;
+            @include center;
             width: 20px;
             height: 20px;
             border-radius: 100%;
@@ -192,7 +193,7 @@
     }
   }
   .menu_button {
-    @include center-row;
+    @include center;
     @include button;
     @include shadow;
     width: 186px;

@@ -27,7 +27,21 @@
         <section class="menu_container">
             <div class="title_wrapper">
                 <h1 class="restaurant_title">La palette du goût</h1>
-                <i class="fa-sharp fa-regular fa-lg fa-heart"></i>
+                <div class="icone_wrapper">
+                    <!-- I added a svg for do the gradient -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="27" viewBox="0 0 512 512"
+                        class="fullheart">
+                        <path
+                            d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                        <defs>
+                            <linearGradient id="gradient">
+                                <stop offset="0%" stop-color="#9356dc" />
+                                <stop offset="100%" stop-color="#ff69da" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <i class="fa-regular fa-heart fa-2xl emptyheart"></i>
+                </div>
             </div>
 
             <h2 class="title_menu">entrées</h2>
@@ -124,14 +138,22 @@
         <div class="footer_wrapper">
             <div class="flex_wrapper">
                 <i class="fa-solid fa-utensils footer_i white"></i>
-                <p class="footer_text">Proposer un restaurant</p>
+                <a href="#">
+                    <p class="footer_text">Proposer un restaurant</p>
+                </a>
             </div>
             <div class="flex_wrapper">
                 <i class="fa-solid fa-handshake-angle footer_i white"></i>
-                <p class="footer_text">Devenir partenaire</p>
+                <a href="">
+                    <p class="footer_text">Devenir partenaire</p>
+                </a>
             </div>
-            <p class="footer_text">Mentions légales</p>
-            <p class="footer_text">Contact</p>
+            <a href="">
+                <p class="footer_text">Mentions légales</p>
+            </a>
+            <a href="mailto:contact@ohmyfood.com?">
+                <p class="footer_text">Contact</p>
+            </a>
     </footer>
 </body>
 
