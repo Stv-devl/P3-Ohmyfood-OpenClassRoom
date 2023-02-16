@@ -1,158 +1,200 @@
 /**********************************************************************/
 /*Menu*/
 /**********************************************************************/
+main {
+  position: relative;
+  z-index: 0;
 
-.location_container {
-  @include center-row;
-  height: 50px;
-  gap: 18px;
-  background-color: $backgroundDarkgrey;
-  border-top: 5px solid $borderGrey;
-}
-.view_container {
-  margin: 0 auto;
-  padding: 45px 5% 55px 5%;
-  background-color: $backgroundLightgrey;
-
-  .title_homepage {
-    padding: 0 20px;
+  .location_container {
+    @include center-row;
+    height: 50px;
+    gap: 18px;
+    background-color: $backgroundDarkgrey;
+    border-top: 5px solid $borderGrey;
   }
-  .button_homepage {
-    @include button;
+  .view_container {
+    margin: 0 auto;
+    padding: 45px 5% 55px 5%;
+    background-color: $backgroundLightgrey;
+
+    .title_homepage {
+      padding: 0 20px;
+    }
+    .button_homepage {
+      @include button;
+      @include shadow;
+    }
   }
-}
-.functioning_container {
-  text-align: left;
-  width: 89%;
-  margin: 0 auto;
-  padding: 53px 0 70px 10px;
+  .functioning_container {
+    text-align: left;
+    width: 89%;
+    margin: 0 auto;
+    padding: 53px 0 70px 10px;
 
-  .functioning_wrapper {
-    @include direction-column;
-    gap: 24px;
-    padding-top: 33px;
-
-    .functioning_card {
-      position: relative;
-      @include center-row;
-      justify-content: normal;
+    .functioning_wrapper {
+      @include direction-column;
       gap: 24px;
-      background-color: $backgroundLightgrey;
-      width: 100%;
-      height: 75px;
-      border-radius: 20px;
-      padding-left: 35px;
-      box-shadow: 2px 5px 8px $boxShadowGrey;
-      transition: 0.4s ease-in-out;
-      cursor: pointer;
+      padding-top: 33px;
 
-      .functioning_icone {
-        color: $darkGreyIcone;
-      }
-
-      &:hover {
-        background-color: $hoverLightPurple;
-      }
-      &:hover .functioning_icone {
-        color: $darkPurple;
-      }
-
-      .circle {
-        position: absolute;
+      .functioning_card {
+        position: relative;
         @include center-row;
-        width: 25px;
-        height: 25px;
-        color: $backgroundLightgrey;
-        background-color: $darkPurple;
-        border-radius: 100%;
-        transform: translateX(-45px);
+        @include shadow;
+        justify-content: normal;
+        gap: 24px;
+        background-color: $backgroundLightgrey;
+        width: 100%;
+        height: 75px;
+        border-radius: 20px;
+        padding-left: 35px;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+
+        .functioning_icone {
+          color: $darkGreyIcone;
+        }
+
+        &:hover {
+          background-color: $hoverLightPurple;
+        }
+        &:hover .functioning_icone {
+          color: $darkPurple;
+        }
+
+        .circle {
+          position: absolute;
+          @include center-row;
+          width: 25px;
+          height: 25px;
+          color: $backgroundLightgrey;
+          background-color: $darkPurple;
+          border-radius: 100%;
+          transform: translateX(-45px);
+        }
       }
     }
   }
-}
-.restaurant_container {
-  background-color: $backgroundLightgrey;
-  padding: 50px 0 63px 0;
+  .restaurant_container {
+    background-color: $backgroundLightgrey;
+    padding: 50px 0 63px 0;
 
-  .restaurant_card_wrapper {
-    @include direction-column;
-    gap: 16px;
-    padding: 30px 0 0 0;
+    .restaurant_card_wrapper {
+      @include direction-column;
+      gap: 16px;
+      padding: 30px 0 0 0;
 
-    .restaurant_card {
-      position: relative;
-      text-align: left;
-      width: 90%;
-      height: 250px;
-      background-color: $white;
-      border-radius: 15px;
-      margin: 0 auto;
-      box-shadow: 2px 5px 8px $boxShadowGrey;
+      .restaurant_card {
+        @include shadow;
+        position: relative;
+        text-align: left;
+        width: 90%;
+        height: 250px;
+        background-color: $white;
+        border-radius: 15px;
+        margin: 0 auto;
 
-      .new_card {
-        position: absolute;
-        @include center-row;
-        color: $darkGreen;
-        background-color: $lightGreen;
-        border-radius: 4px;
-        width: 80px;
-        height: 28px;
-        top: 15px;
-        right: 15px;
-      }
-
-      .restaurant_img {
-        width: 100%;
-        height: 175px;
-        border-radius: 15px 15px 0 0;
-      }
-      .card_wrapper {
-        @include direction-row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14px 25px 0 15px;
-
-        .icone_wrapper {
-          position: relative;
+        .new_card {
+          position: absolute;
           @include center-row;
-          width: 32px;
-          height: 32px;
-          cursor: pointer;
+          color: $darkGreen;
+          background-color: $lightGreen;
+          border-radius: 4px;
+          width: 80px;
+          height: 28px;
+          top: 15px;
+          right: 15px;
+        }
 
-          .emptyheart {
-            position: absolute;
-            opacity: 1;
-            transition: 0.4s ease-in-out;
-          }
-          .fullheart {
-            position: absolute;
-            opacity: 0;
-            transition: 0.4s ease-in-out;
-          }
+        .restaurant_img {
+          width: 100%;
+          height: 175px;
+          border-radius: 15px 15px 0 0;
+        }
+        .card_wrapper {
+          @include direction-row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 14px 25px 0 15px;
 
-          &:hover {
-            .fullheart {
-              opacity: 1;
-              path {
-                fill: url(#gradient);
-              }
-            }
+          .icone_wrapper {
+            position: relative;
+            @include center-row;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+
             .emptyheart {
+              position: absolute;
+              opacity: 1;
+              transition: 0.4s ease-in-out;
+            }
+            .fullheart {
+              position: absolute;
               opacity: 0;
+              transition: 0.4s ease-in-out;
+            }
+
+            &:hover {
+              .fullheart {
+                opacity: 1;
+                path {
+                  fill: url(#gradient);
+                }
+              }
+              .emptyheart {
+                opacity: 0;
+              }
             }
           }
         }
-        /*
-        &:hover {
-          .fullheart {
-            opacity: 1;
-            background-color: $linearGradientTop;
-          }
-          .emptyheart {
-            opacity: 0;
-          }
-        }*/
       }
+    }
+  }
+  /*****Setting the page loading*****/
+
+  .loader {
+    @include center-row;
+    position: absolute;
+    z-index: 10;
+    top: -50px;
+    background: rgba(254, 253, 253, 0.495);
+    width: 100%;
+    height: 100%;
+    scale: 1;
+    animation: overlay 50ms 2s forwards; //the overlay will close after 6 second
+
+    .loader_circle_starter {
+      position: absolute;
+      top: 492px;
+      border: 5px solid $lightGreen;
+      border-top: 5px solid $backgroundLightgrey;
+      border-radius: 50%;
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+      animation: loaderstarter 2.5s linear infinite;
+    }
+
+    .loader_circle {
+      position: absolute;
+      top: 500px;
+      border: 5px solid $pink;
+      border-top: 5px solid $backgroundLightgrey;
+      border-radius: 50%;
+      margin: 0 auto;
+      width: 44px;
+      height: 44px;
+      animation: loader 2.5s linear infinite;
+    }
+    .loader_circle_inside {
+      position: absolute;
+      top: 508px;
+      border: 5px solid $darkPurple;
+      border-top: 5px solid $backgroundLightgrey;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      animation: loaderinside 2.5s linear infinite;
     }
   }
 }
