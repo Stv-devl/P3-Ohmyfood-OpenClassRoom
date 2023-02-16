@@ -23,6 +23,13 @@ main {
     .button_homepage {
       @include button;
       @include shadow;
+
+      /***************media => desktop*************/
+      @media screen and (min-width: 1000px) {
+        width: 350px;
+        height: 70px;
+      }
+      /***********************************************/
     }
   }
   .functioning_container {
@@ -31,10 +38,23 @@ main {
     margin: 0 auto;
     padding: 53px 0 70px 10px;
 
+    /***************media => desktop*************/
+    @media screen and (min-width: 1000px) {
+      width: 95%;
+    }
+    /***********************************************/
+
     .functioning_wrapper {
       @include direction-column;
       gap: 24px;
       padding-top: 33px;
+
+      /***************media => desktop*************/
+      @media screen and (min-width: 1000px) {
+        @include direction-row;
+        gap: 30px;
+      }
+      /*********************************************/
 
       .functioning_card {
         position: relative;
@@ -55,6 +75,7 @@ main {
         }
 
         &:hover {
+          @include hover-shadow;
           background-color: $hoverLightPurple;
         }
         &:hover .functioning_icone {
@@ -83,6 +104,15 @@ main {
       gap: 16px;
       padding: 30px 0 0 0;
 
+      /***************media => desktop*************/
+      @media screen and (min-width: 1000px) {
+        @include direction-row;
+        gap: 25px;
+        width: 95%;
+        margin: 0 auto;
+      }
+      /***********************************************/
+
       .restaurant_card {
         @include shadow;
         position: relative;
@@ -92,6 +122,10 @@ main {
         background-color: $white;
         border-radius: 15px;
         margin: 0 auto;
+
+        &:hover {
+          @include hover-shadow;
+        }
 
         .new_card {
           position: absolute;
@@ -156,10 +190,10 @@ main {
     @include center-row;
     position: absolute;
     z-index: 10;
-    top: -50px;
+    top: -90px;
     background: rgba(254, 253, 253, 0.495);
     width: 100%;
-    height: 100%;
+    height: 150%;
     scale: 1;
     animation: overlay 50ms 2s forwards; //the overlay will close after 6 second
 

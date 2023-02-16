@@ -125,6 +125,7 @@ h4 {
 
 @mixin direction-row {
   display: flex;
+  flex-direction: row;
 }
 
 @mixin direction-column {

@@ -12,11 +12,31 @@ footer {
 
     .flex_wrapper {
       @include direction-row;
+      align-items: center;
       gap: 10px;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        .footer_text {
+          color: $darkGreyIcone;
+        }
+        .footer_i {
+          color: $darkGreyIcone;
+        }
+      }
 
       /*for align the 2 flex_wrapper*/
       .footer_i {
         width: 20px;
+      }
+    }
+
+    .footer_text {
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: $darkGreyIcone;
       }
     }
   }
