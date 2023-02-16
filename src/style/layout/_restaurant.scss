@@ -2,7 +2,7 @@
   position: relative;
   background-color: $backgroundLightgrey;
 
-  /***************media => desktop*************/
+  /*********************media*********************/
   @media screen and (min-width: $breakup-desktop) {
     padding-bottom: 50px;
   }
@@ -12,11 +12,12 @@
     width: 100%;
     height: 255px;
 
-    /***************media => desktop*************/
+    /*********************media*********************/
     @media screen and (min-width: $breakup-desktop) {
       height: 400px;
     }
     /*******************************************/
+
     .restaurant_img {
       position: absolute;
       z-index: 0;
@@ -25,7 +26,7 @@
       left: 0px;
       top: 0px;
 
-      /***************media => desktop*************/
+      /*******************media********************/
       @media screen and (min-width: $breakup-desktop) {
         height: 400px;
       }
@@ -43,7 +44,7 @@
     padding: 40px 5% 0 5%;
     top: -50px;
 
-    /***************media => desktop*************/
+    /*********************media*******************/
     @media screen and (min-width: $breakup-desktop) {
       top: -20px;
     }
@@ -53,7 +54,7 @@
       @include direction-row;
       align-items: center;
       justify-content: space-between;
-      padding-right: 20px;
+      padding: 0px 20px 35px 0;
       @include heart-animation;
     }
     .title_menu {
@@ -71,9 +72,9 @@
     .food_container {
       @include direction-column;
       gap: 11px;
-      padding: 20px 0;
+      padding: 20px 0 43px 0;
 
-      /***************media => desktop*************/
+      /********************media*******************/
       @media screen and (min-width: $breakup-desktop) {
         @include direction-row;
         gap: 20px;
@@ -96,7 +97,7 @@
         transition: padding-right, box-shadow 0.6s ease-in-out; //for price moving and box-shadow
         transform: scale(0); // for animation  => nothing apear at launch
 
-        /***************media => desktop*************/
+        /*******************media*******************/
         @media screen and (min-width: $breakup-desktop) {
           width: 33%;
         }
@@ -198,9 +199,8 @@
     @include button;
     @include shadow;
     width: 186px;
-    margin-top: 20px;
 
-    /***************media => desktop*************/
+    /*********************media*********************/
     @media screen and (min-width: $breakup-desktop) {
       width: 350px;
       height: 70px;
