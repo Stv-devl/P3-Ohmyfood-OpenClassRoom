@@ -3,7 +3,7 @@
   background-color: $backgroundLightgrey;
 
   /***************media => desktop*************/
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $breakup-desktop) {
     padding-bottom: 50px;
   }
   /*******************************************/
@@ -13,7 +13,7 @@
     height: 255px;
 
     /***************media => desktop*************/
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $breakup-desktop) {
       height: 400px;
     }
     /*******************************************/
@@ -26,7 +26,7 @@
       top: 0px;
 
       /***************media => desktop*************/
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: $breakup-desktop) {
         height: 400px;
       }
       /*******************************************/
@@ -44,7 +44,7 @@
     top: -50px;
 
     /***************media => desktop*************/
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $breakup-desktop) {
       top: -20px;
     }
     /********************************************/
@@ -74,7 +74,7 @@
       padding: 20px 0;
 
       /***************media => desktop*************/
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: $breakup-desktop) {
         @include direction-row;
         gap: 20px;
         justify-content: center;
@@ -93,11 +93,11 @@
         background-color: $white;
         padding: 0 15px;
         cursor: pointer;
-        transition: padding-right 0.6s ease-in-out; //for price moving
+        transition: padding-right, box-shadow 0.6s ease-in-out; //for price moving and box-shadow
         transform: scale(0); // for animation  => nothing apear at launch
 
         /***************media => desktop*************/
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: $breakup-desktop) {
           width: 33%;
         }
         /*******************************************/
@@ -141,6 +141,7 @@
         }
 
         &:hover {
+          @include hover-shadow;
           padding-right: 70px;
 
           .check {
@@ -200,7 +201,7 @@
     margin-top: 20px;
 
     /***************media => desktop*************/
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $breakup-desktop) {
       width: 350px;
       height: 70px;
     }
