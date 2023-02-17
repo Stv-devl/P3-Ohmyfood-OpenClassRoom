@@ -415,7 +415,7 @@ main .loader {
 }
 main .loader .loader_circle_starter {
   position: absolute;
-  top: 492px;
+  top: 218px;
   border: 5px solid #99e2d0;
   border-top: 5px solid #f3f3f0;
   border-radius: 50%;
@@ -426,7 +426,7 @@ main .loader .loader_circle_starter {
 }
 main .loader .loader_circle {
   position: absolute;
-  top: 500px;
+  top: 226px;
   border: 5px solid #ff69da;
   border-top: 5px solid #f3f3f0;
   border-radius: 50%;
@@ -437,7 +437,7 @@ main .loader .loader_circle {
 }
 main .loader .loader_circle_inside {
   position: absolute;
-  top: 508px;
+  top: 234px;
   border: 5px solid #9356dc;
   border-top: 5px solid #f3f3f0;
   border-radius: 50%;
