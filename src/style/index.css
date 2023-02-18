@@ -140,8 +140,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 5px 8px #cccccc;
+  position: relative;
+  z-index: 1;
   gap: 66px;
-  margin: 22px 0 12px 0;
+  padding: 22px 0 12px 0;
 }
 .header_container .title_img {
   width: 165px;
@@ -209,13 +212,6 @@ main .functioning_container {
   width: 90%;
   margin: 0 auto;
   padding: 53px 0 70px 10px;
-  /***************media***************************/
-  /***********************************************/
-}
-@media screen and (min-width: 1060px) {
-  main .functioning_container {
-    width: 95%;
-  }
 }
 main .functioning_container .functioning_wrapper {
   display: flex;
@@ -293,7 +289,6 @@ main .restaurant_container .restaurant_card_wrapper {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    width: 95%;
     margin: 0 auto;
   }
 }

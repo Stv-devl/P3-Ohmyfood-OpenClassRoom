@@ -3,8 +3,11 @@
 /**********************************************************************/
 .header_container {
   @include center;
+  @include shadow;
+  position: relative;
+  z-index: 1;
   gap: 66px;
-  margin: 22px 0 12px 0;
+  padding: 22px 0 12px 0;
 
   .title_img {
     width: 165px;

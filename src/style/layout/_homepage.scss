@@ -37,12 +37,6 @@ main {
     margin: 0 auto;
     padding: 53px 0 70px 10px;
 
-    /***************media***************************/
-    @media screen and (min-width: $breakup-desktop) {
-      width: 95%;
-    }
-    /***********************************************/
-
     .functioning_wrapper {
       @include direction-column;
       gap: 24px;
@@ -111,7 +105,6 @@ main {
       @media screen and (min-width: $breakup-desktop) {
         @include direction-row;
         gap: 25px;
-        width: 95%;
         margin: 0 auto;
       }
       /***********************************************/
