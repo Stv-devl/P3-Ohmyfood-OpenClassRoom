@@ -1,0 +1,49 @@
+/*****Setting the page loading*****/
+
+.loader {
+  @include center;
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  background: rgba(159, 158, 158, 0.722);
+  margin: 0 auto;
+  scale: 1;
+  animation: overlay 50ms 2s forwards; //the overlay will close after 2 second
+
+  .loader_circle_starter {
+    position: absolute;
+    top: 218px;
+    border: 5px solid $lightGreen;
+    border-top: 5px solid $backgroundDarkgrey;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    animation: loader 2.5s linear infinite;
+  }
+
+  .loader_circle_middle {
+    position: absolute;
+    top: 226px;
+    border: 5px solid $pink;
+    border-top: 5px solid $backgroundDarkgrey;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+    animation: loader 2.5s linear infinite;
+  }
+  .loader_circle_inside {
+    position: absolute;
+    top: 234px;
+    border: 5px solid $darkPurple;
+    border-top: 5px solid $backgroundDarkgrey;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    animation: loader 2.5s linear infinite;
+  }
+}

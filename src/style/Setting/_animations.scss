@@ -1,25 +1,19 @@
 /***************************Animations***************************/
-/** restaurant page => menu animation**/
-@keyframes appear {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
+/** restaurant => animation on menu**/
 @keyframes moving {
   from {
-    transform: translateY(20px);
+    transform: translateY(15px);
+    opacity: 0;
   }
   to {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
 /** homepage => loading animation with overlay**/
 
+/*make overlay disappear*/
 @keyframes overlay {
   from {
     transform: scale(1);
@@ -28,26 +22,8 @@
     transform: scale(0);
   }
 }
-
-@keyframes loaderstarter {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* the 3 circles will rotate*/
 @keyframes loader {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loaderinside {
   from {
     transform: rotate(0deg);
   }
