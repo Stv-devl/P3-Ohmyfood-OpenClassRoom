@@ -264,7 +264,7 @@ main .functioning_container .functioning_wrapper .functioning_card .circle {
   color: #f3f3f0;
   background-color: #9356dc;
   border-radius: 100%;
-  transform: translateX(-45px);
+  left: -11px;
 }
 main .restaurant_container {
   background-color: #f3f3f0;
