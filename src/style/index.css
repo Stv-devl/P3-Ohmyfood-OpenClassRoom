@@ -301,6 +301,7 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card {
   background-color: #fcfcfa;
   border-radius: 15px;
   margin: 0 auto;
+  transition: 0.4s ease-in-out;
   /***************media***************************/
   /***********************************************/
 }
@@ -366,8 +367,6 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapp
 }
 main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper:hover .fullheart {
   opacity: 1;
-}
-main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper:hover .fullheart path {
   fill: url(#gradient);
 }
 main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapper .icone_wrapper:hover .emptyheart {
@@ -506,8 +505,6 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapp
 }
 .main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .fullheart {
   opacity: 1;
-}
-.main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .fullheart path {
   fill: url(#gradient);
 }
 .main_restaurant .menu_container .title_wrapper .icone_wrapper:hover .emptyheart {

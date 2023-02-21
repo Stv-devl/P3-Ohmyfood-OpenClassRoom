@@ -79,10 +79,9 @@
     &:hover {
       .fullheart {
         opacity: 1;
-        path {
-          fill: url(#gradient);
-        }
+        fill: url(#gradient);
       }
+
       .emptyheart {
         opacity: 0;
       }

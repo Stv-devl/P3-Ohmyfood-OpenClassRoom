@@ -118,6 +118,7 @@ main {
         background-color: $white;
         border-radius: 15px;
         margin: 0 auto;
+        transition: 0.4s ease-in-out;
 
         &:hover {
           @include hover-shadow;
@@ -154,10 +155,10 @@ main {
         }
         .card_wrapper {
           @include direction-row;
+          @include heart-animation;
           justify-content: space-between;
           align-items: center;
           padding: 14px 25px 0 15px;
-          @include heart-animation;
         }
       }
     }
