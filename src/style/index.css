@@ -384,7 +384,7 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapp
   z-index: 10;
   top: 0px;
   left: 0px;
-  background: rgba(159, 158, 158, 0.722);
+  background: rgba(168, 166, 166, 0.512);
   margin: 0 auto;
   animation: overlay 50ms 2s forwards;
 }
@@ -423,6 +423,7 @@ main .restaurant_container .restaurant_card_wrapper .restaurant_card .card_wrapp
 
 .main_restaurant {
   position: relative;
+  z-index: 1;
   background-color: #f3f3f0;
   /*********************media*********************/
   /*******************************************/
